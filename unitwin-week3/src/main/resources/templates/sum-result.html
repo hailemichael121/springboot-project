@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sum Result</title>
+  </head>
+  <body>
+    <h1>Calculation Result</h1>
+    <p>
+      The sum of <span th:text="${num1}"></span> +
+      <span th:text="${num2}"></span> + <span th:text="${num3}"></span> =
+      <strong th:text="${result}"></strong>
+    </p>
+    <a href="/sum-form">Calculate Again</a>
+  </body>
+</html>
