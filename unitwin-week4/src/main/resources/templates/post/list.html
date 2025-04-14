@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Post List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+      }
+      .post {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+      }
+      .post h2 {
+        margin: 0;
+      }
+      .post small {
+        color: #666;
+      }
+      .actions a {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📜 Post List</h1>
+
+    <div th:if="${#lists.isEmpty(posts)}">
+      <p>No posts found.</p>
+    </div>
+
+    <div th:each="post : ${posts}" class="post">
+      <h2 th:text="${post.title}">Post Title</h2>
+      <p th:text="${post.content}">Post content here...</p>
+      <small th:text="${post.createdAt}">Created At</small>
+      <div class="actions">
+        <a th:href="@{'/posts/' + ${post.id}}">View</a>
+      </div>
+    </div>
+
+    <a href="/posts/new">➕ Create New Post</a>
+  </body>
+</html>

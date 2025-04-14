@@ -1,0 +1,65 @@
+# Compiled Java files
+*.class
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Maven target directory
+/target/
+
+# Gradle build directory
+/build/
+
+# IntelliJ IDEA project files
+/.idea/
+/*.iml
+
+# Eclipse project files
+/.classpath
+/.project
+/.settings/
+
+# VS Code settings
+/.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Spring Boot specific files
+*.jar
+*.war
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Test reports
+/test-output/
+
+/test-results/
+
+# Generated files
+*.generated.*
+
+# Backup files
+*.bak
+*.swp
+
+# Coverage reports
+/coverage/
+/jacoco.exec
+
+# Temporary database files
+*.db
+*.h2.db
+*.mv.db
+
+# IDE-specific metadata
+/.metadata/
+
+# Other temporary or cache files
+/.cache/
+/.tmp/
