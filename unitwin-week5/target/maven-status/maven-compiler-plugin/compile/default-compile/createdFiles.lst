@@ -1,0 +1,6 @@
+com/example/basicsprboot2025/controller/BoardRestController.class
+com/example/basicsprboot2025/controller/BoardController.class
+com/example/basicsprboot2025/Basicsprboot2025Application.class
+com/example/basicsprboot2025/exception/ResourceNotFoundException.class
+com/example/basicsprboot2025/controller/DefaultRestController.class
+com/example/basicsprboot2025/model/Board.class
